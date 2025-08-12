@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: myapp-prod
+namePrefix: ""
+nameSuffix: ""
+resources:
+  - ../../base
+patches:
+  - target:
+      kind: Deployment
+      name: myapp
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: $IMAGE  # Jenkins will string-replace this per promotion
