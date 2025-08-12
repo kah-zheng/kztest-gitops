@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-staging
+  name: kztest-staging
   namespace: argocd
 spec:
   project: default
@@ -13,7 +13,7 @@ spec:
       recurse: true
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp-staging
+    namespace: kztest-staging
   syncPolicy:
     automated:
       prune: true
