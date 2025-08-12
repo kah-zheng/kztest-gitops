@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: kztest
   labels:
-    app: myapp
+    app: kztest
 spec:
   type: ClusterIP
   selector:
-    app: myapp
+    app: kztest
   ports:
     - name: http
       port: 80
