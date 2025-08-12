@@ -3,9 +3,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-namespace: kztest
+namespace: myapp
 namePrefix: ""
 nameSuffix: ""
 commonLabels:
-  app.kubernetes.io/name: kztest
-  app.kubernetes.io/part-of: kztest
+  app.kubernetes.io/name: myapp
+  app.kubernetes.io/part-of: myapp
