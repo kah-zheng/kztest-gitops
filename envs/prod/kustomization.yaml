@@ -10,4 +10,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/image
-        value: 405937588543.dkr.ecr.ap-southeast-1.amazonaws.com/kztest:30
+        value: 405937588543.dkr.ecr.ap-southeast-1.amazonaws.com/kztest:31
