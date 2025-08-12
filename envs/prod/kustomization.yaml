@@ -12,4 +12,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/image
-        value: $IMAGE  # Jenkins will string-replace this per promotion
+        value: 405937588543.dkr.ecr.ap-southeast-1.amazonaws.com/kztest:26  # Jenkins will string-replace this per promotion
