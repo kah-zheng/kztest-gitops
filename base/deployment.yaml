@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kztest
+  name: myapp
   labels:
-    app: kztest
+    app: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kztest
+      app: myapp
   template:
     metadata:
       labels:
-        app: kztest
+        app: myapp
     spec:
       containers:
-        - name: kztest
+        - name: myapp
           image: REPLACE_ME_IMAGE  # kustomize will patch this per environment
           ports:
             - containerPort: 8080
