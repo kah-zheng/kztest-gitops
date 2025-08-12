@@ -6,7 +6,7 @@ resources:
 patches:
   - target:
       kind: Deployment
-      name: kztest
+      name: myapp
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/image
